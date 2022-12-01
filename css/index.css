@@ -1,0 +1,107 @@
+body {
+	margin: 0;
+	box-sizing: border-box;
+	background-image: url('../assets/images/bg.jpg');
+	background-position: fixed;
+	background-size: cover;
+}
+
+/* HEADER STYLING */
+
+.header-menu {
+	padding: 0 2rem;
+	display: flex;
+	justify-content: space-between;
+	background-color: white;
+	box-shadow: 0 4px 2px -2px rgb(197, 196, 196);
+}
+
+.nav-section ul {
+	display: flex;
+	list-style-type: none;
+}
+li.nav-section__text {
+    padding: 0 2rem;
+}
+li.nav-section__icon svg {
+    width: 2rem;
+    height: 2rem;
+	padding: 1rem;
+}
+
+.hero {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	color: white;
+}
+
+/* MAIN */
+
+
+.post-it{
+	padding: 4rem;
+	background-color: rgb(245, 227, 245);
+}
+
+.post-it__intro {
+	background-color: white;
+	padding: 2rem;
+}
+
+.seminar-cards {
+	padding: 4rem;
+	background-color: white;
+}
+.seminar-cards__card {
+	display: flex;
+	height: 20rem;
+	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.171);
+}
+
+.seminar-cards__card figure {
+	width: 80%;
+	background-image: url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80');
+	background-size: cover;
+	margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
+.seminar-cards__card .text {
+	padding-left: 2rem;
+}
+
+/* Footer */
+
+.footer-menu {
+	display: flex;
+}
+
+
+
+@media all and (max-width:740px) {
+	footer {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 0fr;
+	}
+
+	.öppettider {
+		grid-column: 1;
+	}
+
+	.Kontakta-oss {
+		grid-column: 2;
+	}
+
+	.icons-container {
+		grid-column: 1/ span 2;
+		grid-row: 2;
+	}
+
+
+
+
+}
