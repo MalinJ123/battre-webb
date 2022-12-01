@@ -1,3 +1,11 @@
+/* font-family: 'Inter', sans-serif;
+font-family: 'Lexend', sans-serif;
+font-family: 'Marhey', cursive;
+font-family: 'Oleo Script', cursive;
+font-family: 'Paytone One', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+font-family: 'Urbanist', sans-serif; */
+
 body {
 	margin: 0;
 	box-sizing: border-box;
@@ -14,6 +22,7 @@ body {
 	justify-content: space-between;
 	background-color: white;
 	box-shadow: 0 4px 2px -2px rgb(197, 196, 196);
+	font-family: 'Lexend', sans-serif;
 }
 
 .logo-section {
@@ -48,44 +57,180 @@ li.nav-section__icon svg {
 	text-align: center;
 	color: white;
 	padding: 4rem;
+	
 }
 
+.hero h2{
+	font-family: 'Paytone One', sans-serif;
+	font-weight: normal;
+	font-size:1.5em;
+}
+.hero h1{
+	font-family: 'Paytone One', sans-serif;
+	font-weight: normal;
+	font-size:3em;
+	line-height: 0%;
+	
+}
 /* MAIN */
 
 
 .post-it{
 	padding: 4rem;
-	background-color: rgb(245, 227, 245);
-}
+	margin: 0px 135px;
+	/* background-color: #E3C3EE;*/
+		
+} 
 
 .post-it__intro {
 	background-color: white;
 	padding: 2rem;
+	font-family: 'Lexend', sans-serif;
+	font-size: 20px;
+	display:flex;
+	flex-direction: column;
+	flex-wrap:wrap;
+	
 }
-
+.date span {
+	line-height: 2em;
+	margin: 1em;
+	
+	
+}
 .seminar-cards {
 	padding: 4rem;
 	background-color: white;
+	margin: 0px 200px;
 }
 .seminar-cards__card {
 	display: flex;
 	height: 20rem;
 	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.171);
 }
+.text-friday{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 18px;
+	line-height: 22px;
+}
 
 .seminar-cards__card figure {
-	width: 80%;
-	background-image: url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80');
+	background-image: url('https://softtech.com/wp-content/uploads/2020/09/UX-vs-UI-Design-1024x819.jpg'); 
 	background-size: cover;
 	margin-block-start: 0;
     margin-block-end: 0;
     margin-inline-start: 0;
     margin-inline-end: 0;
+	min-width: 40%;
 }
+	/* background-image: url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80'); */
 
 .seminar-cards__card .text {
 	padding-left: 2rem;
+	padding-right: 2rem;
 }
+
+
+/* Postit 2 */
+
+
+
+.seminar-cards__card2 {
+	display: flex;
+	height: 20rem;
+	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.171);
+}
+.text-saturday{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 18px;
+	line-height: 22px;
+}
+
+.seminar-cards__card2 figure {
+	background-image: url('https://media.istockphoto.com/id/1155568451/sv/vektor/backend-och-frontend-webbutvecklare-stor-smartphone-med-ans%C3%B6kan-m%C3%A5lsida-mall-t.jpg?s=612x612&w=is&k=20&c=HdIrNm1z-CJvOU_e6gRSh5Wh7raa8PwBSTRiTVaTP2E='); 
+	background-size: cover;
+	margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+	min-width: 40%;
+}
+	/* background-image: url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80'); */
+
+.seminar-cards__card2 .text {
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
+/* POST IT 3 */
+
+
+.seminar-cards__card3 {
+	display: flex;
+	height: 20rem;
+	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.171);
+}
+.text-sunday{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 18px;
+	line-height: 22px;
+} 
+
+.seminar-cards__card3 figure {
+	
+	background-image: url('https://media.istockphoto.com/id/1169397173/sv/vektor/back-end-utveckling-koncept-vektor-illustration.jpg?s=612x612&w=is&k=20&c=RyoELSxFHgYUMS6xfJjSKBoJPg_DPeXF9oi2GecrMZ0='); 
+	
+	background-size: cover;
+	margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+	min-width: 40%;
+}
+
+
+.seminar-cards__card3 .text {
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
+/* Köp Dags/Helg biljetter */
+
+.day-pass{
+	display:flex; 
+	flex-direction: row;
+	justify-content: center;
+	
+}
+
+.day {
+	margin: 3em 3em 6em 0em;
+}
+         
+.btn-grad {
+	background-image: linear-gradient(to right, #DA22FF 0%, #9733EE  51%, #DA22FF  100%);
+	margin: 10px;
+	padding: 15px 45px;
+	text-align: center;
+	text-transform: uppercase;
+	transition: 0.5s;
+	background-size: 200% auto;
+	color: white;            
+	box-shadow: 0 0 30px #eee;
+	border-radius: 10px;
+	display: block;
+	
+  }
+
+  .btn-grad:hover {
+	background-position: right center; /* change the direction of the change here */
+	color: #fff;
+	text-decoration: none;
+  }
+ 
+  .img-resize{ 
+	height:300px;
+  }
 
 /* Footer */
 
@@ -96,6 +241,12 @@ li.nav-section__icon svg {
 	justify-content: space-around;
 	flex-wrap: wrap;
 	padding: 2rem 4rem;
+	font-size: 19px;
+	
+}
+.icons .img-resize {
+	height: 50px;
+	margin-top: 2em;
 }
 
 
