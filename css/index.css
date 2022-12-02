@@ -23,31 +23,45 @@ body {
 	background-color: white;
 	box-shadow: 0 4px 2px -2px rgb(197, 196, 196);
 	font-family: 'Lexend', sans-serif;
+
+	/* nytt */
+	flex-direction: column;
 }
 
 .logo-section {
 	display: flex;
-    flex-direction: column;
-    justify-content: center;
+	flex-direction: row;
+    justify-content: space-between;
 }
-
+.mobile-pic{
+	visibility: hidden;
+	width: 0%;
+}
 .nav-section {
 	display: flex;
     flex-direction: column;
     justify-content: center;
+	flex-wrap: wrap;
 }
 
 .nav-section ul {
 	display: flex;
 	list-style-type: none;
+
 }
 li.nav-section__text {
-    padding: 0 2rem;
+    padding: 0 1rem;
 }
 li.nav-section__icon svg {
     width: 2rem;
     height: 2rem;
-	padding: 1rem;
+	padding: 1em;
+}
+
+.second-menu{
+	visibility: hidden;
+	width:0%;
+	height:1px;
 }
 
 .hero {
@@ -72,14 +86,74 @@ li.nav-section__icon svg {
 	line-height: 0%;
 	
 }
+@media (max-width: 900px) {
+		li.nav-section__text {
+		visibility: hidden;
+		font-size:1px;
+		padding:0%;
+		}
+		li.nav-section .icon {
+		height: 2rem;
+		display: block;
+		flex-wrap: wrap;
+		}
+
+		li.nav-section__icon svg{
+
+		height: 40px;
+		width: auto;
+		padding:0%;
+		}
+
+		.second-menu{
+		visibility:visible;
+		width: auto;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		
+	}
+	.menu-icon{
+		margin-top: 0.5em;
+		
+	}
+
+	.icon{
+		border: 2px solid black;
+		border-radius: 10px;
+		height:1.7em;
+		display: flex;
+		align-items:center;
+		justify-content: center;
+		background-color: #eee;
+		margin-top: 1em;
+				
+	}
+		.search { margin: 5em;}
+	}
+
+
+	@media(max-width:600px) {
+	.mobile-pic{
+		visibility:visible;
+		width: 6em;
+	}
+
+	.desktop-pic{
+		display: none;
+	}
+
+	
+	
+	}
+	
+
 /* MAIN */
 
 
 .post-it{
-	padding: 4rem;
-	margin: 0px 135px;
-	/* background-color: #E3C3EE;*/
-		
+	padding:0%;
+	margin:1em;	
 } 
 
 .post-it__intro {
@@ -116,12 +190,14 @@ li.nav-section__icon svg {
 
 .seminar-cards__card figure {
 	background-image: url('https://softtech.com/wp-content/uploads/2020/09/UX-vs-UI-Design-1024x819.jpg'); 
-	background-size: cover;
+	background-size:contain;
+	background-repeat: no-repeat;
+	/* background-attachment: fixed; */
 	margin-block-start: 0;
     margin-block-end: 0;
     margin-inline-start: 0;
     margin-inline-end: 0;
-	min-width: 40%;
+	min-width: 400px;
 }
 	/* background-image: url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80'); */
 
@@ -129,6 +205,65 @@ li.nav-section__icon svg {
 	padding-left: 2rem;
 	padding-right: 2rem;
 }
+@media (min-width:901px){
+	.seminar-cards {
+		padding: 4rem;
+		background-color: white;
+		margin: 1em;
+	}
+	.event-ticket{
+		display:row;
+		margin-left: 2em;
+	}
+}
+
+
+@media (max-width:900px){
+	.post-it {
+	padding:0%;
+	margin:1em;
+	}
+
+	.seminar-cards {
+		padding:0%;
+		background-color: white;
+		margin:1em;
+		
+	}
+	.seminar-cards__card {
+		display: flex;
+		height: 20rem;
+		box-shadow: 4px 4px 4px rgb(0 0 0 / 17%);
+		/* display: flex; */
+		flex-direction: column;
+
+	}
+
+	.seminar-cards__card2 {
+		display: flex;
+		height: 20rem;
+		box-shadow: 4px 4px 4px rgb(0 0 0 / 17%);
+		/* display: flex; */
+		flex-direction: column;
+
+	}
+	.seminar-cards__card3 {
+		display: flex;
+		height: 20rem;
+		box-shadow: 4px 4px 4px rgb(0 0 0 / 17%);
+		/* display: flex; */
+		flex-direction: column;
+
+	}
+
+	.event-ticket{
+		display:column;
+		margin-left: 2em;
+	}
+}
+
+
+
 
 
 /* Postit 2 */
@@ -153,7 +288,8 @@ li.nav-section__icon svg {
     margin-block-end: 0;
     margin-inline-start: 0;
     margin-inline-end: 0;
-	min-width: 40%;
+	background-repeat: no-repeat;
+	min-width: 400px;
 }
 	/* background-image: url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80'); */
 
@@ -185,7 +321,8 @@ li.nav-section__icon svg {
     margin-block-end: 0;
     margin-inline-start: 0;
     margin-inline-end: 0;
-	min-width: 40%;
+	background-repeat: no-repeat;
+	min-width: 400px;
 }
 
 
@@ -241,7 +378,8 @@ li.nav-section__icon svg {
 	justify-content: space-around;
 	flex-wrap: wrap;
 	padding: 2rem 4rem;
-	font-size: 19px;
+
+	line-height: 20%;
 	
 }
 .icons .img-resize {
@@ -251,26 +389,50 @@ li.nav-section__icon svg {
 
 
 
-@media all and (max-width:740px) {
-	footer {
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 1fr 0fr;
+@media all and (max-width:900px) {
+	
+
+	.footer-menu {
+		display: flex;
+		flex-direction: row;
+		display: flex;
+		background-color: #4e534f;
+		color: white;
+		line-height: 20%;
+		flex-wrap: wrap;
+	
+	}
+	.icons .img-resize {
+		display: none;
+		}
+		.footer-line{
+			display:none;
+		}
+
 	}
 
-	.öppettider {
-		grid-column: 1;
-	}
+	@media all and (max-width:500px) {
+	
 
-	.Kontakta-oss {
-		grid-column: 2;
-	}
+		.footer-menu {
+			display: flex;
+			flex-direction: column;
+			display: flex;
+			background-color: #4e534f;
+			color: white;
+			line-height: 20%;
+			flex-wrap: wrap;
+			align-items: center;
+		}
+		.icons .img-resize {
+			display: none;
+			}
+			.footer-line{
+				display:none;
+			}
+	
+		}
 
-	.icons-container {
-		grid-column: 1/ span 2;
-		grid-row: 2;
-	}
 
 
 
-
-}
