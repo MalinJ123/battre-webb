@@ -87,7 +87,8 @@ li.nav-section__icon svg {
 	
 }
 @media (max-width: 900px) {
-		li.nav-section__text {
+		
+	li.nav-section__text {
 		visibility: hidden;
 		font-size:1px;
 		padding:0%;
@@ -137,206 +138,101 @@ li.nav-section__icon svg {
 	.mobile-pic{
 		visibility:visible;
 		width: 6em;
+	}.hero h1{
+		font-family: 'Paytone One', sans-serif;
+		font-weight: normal;
+		font-size: 2em;
+		
+		
 	}
-
 	.desktop-pic{
 		display: none;
 	}
-
 	
 	
-	}
+}
 	
 
 /* MAIN */
 
 
-.post-it{
+article .post-it{
 	padding:0%;
 	margin:1em;	
+	margin-bottom:120px;
+	display: flex;
+	justify-content: center;
 } 
 
+.post-it__intro h3{
+	justify-content: center;
+	display: flex;
+}
 .post-it__intro {
-	background-color: white;
-	padding: 2rem;
+	background-color: rgba(255, 255, 255, 0.683);
 	font-family: 'Lexend', sans-serif;
-	font-size: 20px;
+	font-size: 23px;
 	display:flex;
 	flex-direction: column;
 	flex-wrap:wrap;
-	
+	padding:3em;
 }
 .date span {
 	line-height: 2em;
 	margin: 1em;
-	
-	
+	justify-content: center;
 }
-.seminar-cards {
-	padding: 4rem;
-	background-color: white;
-	margin: 0px 200px;
+
+.test-card{
+	display:flex;
+	flex-wrap: wrap;
+	padding: 2em;
 }
-.seminar-cards__card {
-	display: flex;
-	height: 20rem;
-	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.171);
+.text-pic{
+	max-width: 30%;
+	min-height: auto;
+	border: 2px solid rgba(0, 0, 0, 0.344);
+	border-radius: 10em;
+	margin:1em;
+
 }
 .text-friday{
 	font-family: 'Ubuntu', sans-serif;
 	font-size: 18px;
 	line-height: 22px;
+	background-color: #eee;
+	padding: 0 2em;
+	margin: 0 2em 0 0 ;
 }
 
-.seminar-cards__card figure {
-	background-image: url('https://softtech.com/wp-content/uploads/2020/09/UX-vs-UI-Design-1024x819.jpg'); 
-	background-size:contain;
-	background-repeat: no-repeat;
-	/* background-attachment: fixed; */
-	margin-block-start: 0;
-    margin-block-end: 0;
-    margin-inline-start: 0;
-    margin-inline-end: 0;
-	min-width: 400px;
-}
-	/* background-image: url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80'); */
+/* test-card2 */
 
-.seminar-cards__card .text {
-	padding-left: 2rem;
-	padding-right: 2rem;
-}
-@media (min-width:901px){
-	.seminar-cards {
-		padding: 4rem;
-		background-color: white;
-		margin: 1em;
-	}
-	.event-ticket{
-		display:row;
-		margin-left: 2em;
-	}
-}
-
-
-@media (max-width:900px){
-	.post-it {
-	padding:0%;
-	margin:1em;
-	}
-
-	.seminar-cards {
-		padding:0%;
-		background-color: white;
-		margin:1em;
-		
-	}
-	.seminar-cards__card {
-		display: flex;
-		height: 20rem;
-		box-shadow: 4px 4px 4px rgb(0 0 0 / 17%);
-		/* display: flex; */
-		flex-direction: column;
-
-	}
-
-	.seminar-cards__card2 {
-		display: flex;
-		height: 20rem;
-		box-shadow: 4px 4px 4px rgb(0 0 0 / 17%);
-		/* display: flex; */
-		flex-direction: column;
-
-	}
-	.seminar-cards__card3 {
-		display: flex;
-		height: 20rem;
-		box-shadow: 4px 4px 4px rgb(0 0 0 / 17%);
-		/* display: flex; */
-		flex-direction: column;
-
-	}
-
-	.event-ticket{
-		display:column;
-		margin-left: 2em;
-	}
-}
-
-
-
-
-
-/* Postit 2 */
-
-
-
-.seminar-cards__card2 {
-	display: flex;
-	height: 20rem;
-	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.171);
-}
 .text-saturday{
 	font-family: 'Ubuntu', sans-serif;
 	font-size: 18px;
 	line-height: 22px;
+	background-color: #eee;
+	padding: 0 2em;
+	margin: 0 2em 0 0 ;
 }
 
-.seminar-cards__card2 figure {
-	background-image: url('https://media.istockphoto.com/id/1155568451/sv/vektor/backend-och-frontend-webbutvecklare-stor-smartphone-med-ans%C3%B6kan-m%C3%A5lsida-mall-t.jpg?s=612x612&w=is&k=20&c=HdIrNm1z-CJvOU_e6gRSh5Wh7raa8PwBSTRiTVaTP2E='); 
-	background-size: cover;
-	margin-block-start: 0;
-    margin-block-end: 0;
-    margin-inline-start: 0;
-    margin-inline-end: 0;
-	background-repeat: no-repeat;
-	min-width: 400px;
-}
-	/* background-image: url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80'); */
-
-.seminar-cards__card2 .text {
-	padding-left: 2rem;
-	padding-right: 2rem;
-}
-
-/* POST IT 3 */
-
-
-.seminar-cards__card3 {
-	display: flex;
-	height: 20rem;
-	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.171);
-}
+/* test-card 3 */
 .text-sunday{
 	font-family: 'Ubuntu', sans-serif;
 	font-size: 18px;
 	line-height: 22px;
-} 
-
-.seminar-cards__card3 figure {
-	
-	background-image: url('https://media.istockphoto.com/id/1169397173/sv/vektor/back-end-utveckling-koncept-vektor-illustration.jpg?s=612x612&w=is&k=20&c=RyoELSxFHgYUMS6xfJjSKBoJPg_DPeXF9oi2GecrMZ0='); 
-	
-	background-size: cover;
-	margin-block-start: 0;
-    margin-block-end: 0;
-    margin-inline-start: 0;
-    margin-inline-end: 0;
-	background-repeat: no-repeat;
-	min-width: 400px;
-}
-
-
-.seminar-cards__card3 .text {
-	padding-left: 2rem;
-	padding-right: 2rem;
+	background-color: #eee;
+	padding: 0 2em;
+	margin: 0 2em 0 0 ;
 }
 
 /* Köp Dags/Helg biljetter */
 
-.day-pass{
+.event-ticket{
 	display:flex; 
 	flex-direction: row;
-	justify-content: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
 	
 }
 
@@ -369,6 +265,63 @@ li.nav-section__icon svg {
 	height:300px;
   }
 
+ 
+@media (min-width:901px){
+	.seminar-cards {
+		padding: 4rem;
+		background-color: white;
+		margin: 1em;
+	}
+	.event-ticket{
+		display:row;
+		margin-left: 2em;
+	}
+	
+}
+
+
+@media (max-width:900px){
+	.post-it {
+	padding:0%;
+	margin:1em;
+
+	}
+
+	.seminar-cards {
+		padding:0%;
+		background-color: white;
+		margin:1em;
+		
+	}
+	.seminar-cards__card {
+		display: flex;
+		height: 20rem;
+		box-shadow: 4px 4px 4px rgb(0 0 0 / 17%);
+		flex-direction: column;
+
+	}
+
+	.seminar-cards__card2 {
+		display: flex;
+		height: 20rem;
+		box-shadow: 4px 4px 4px rgb(0 0 0 / 17%);
+		
+
+	}
+	.seminar-cards__card3 {
+		display: flex;
+		height: 20rem;
+		box-shadow: 4px 4px 4px rgb(0 0 0 / 17%);
+	
+
+	}
+
+	.event-ticket{
+		display:column;
+		margin-left: 2em;
+	}
+}
+
 /* Footer */
 
 .footer-menu {
@@ -388,14 +341,12 @@ li.nav-section__icon svg {
 }
 
 
-
 @media all and (max-width:900px) {
 	
 
 	.footer-menu {
 		display: flex;
-		flex-direction: row;
-		display: flex;
+		/* flex-direction: column; */
 		background-color: #4e534f;
 		color: white;
 		line-height: 20%;
@@ -413,11 +364,14 @@ li.nav-section__icon svg {
 
 	@media all and (max-width:500px) {
 	
+		/* .footer-container{
+			display: flex;
+			flex-direction: flex;
+		} */
 
 		.footer-menu {
 			display: flex;
 			flex-direction: column;
-			display: flex;
 			background-color: #4e534f;
 			color: white;
 			line-height: 20%;
