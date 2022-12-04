@@ -92,7 +92,7 @@ input:valid {
 	color: rgb(166, 20, 20);
 }
 input:invalid + .error-message {
-	/* visibility: visible; */
+	visibility: visible; 
 	/* display: block; */
 }
 
