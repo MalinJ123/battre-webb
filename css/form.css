@@ -1,0 +1,156 @@
+/* MAIN */
+
+
+/* 1 av 4 sectioner VÄLJ DAG */
+.choose-day{
+	display:flex;
+	flex-direction: column;
+	background-color: rgba(240, 248, 255, 0.597);
+	border: 2px solid black;
+	margin-top: 8em;
+	max-width:auto;
+
+	
+}
+	.color-background:hover{
+		background-color: white;
+		padding: 4px 0 ;
+		cursor: pointer;
+	}
+	
+	.input-text{
+		text-align: center;
+	}
+	.form-check{
+		line-height: 36px;
+		text-align: center;
+	}
+
+	input.form-check-input{
+		width: 20px;
+		height: 20px;
+
+	}
+	p{
+		display: inline;
+		font-size: 20px;
+	}
+
+	/* 2 av 3 sectioner */
+/* DAVIDS CSS GITHUB  */
+
+#quantity{
+	width:2em;
+	margin-bottom:1.5em;
+}
+
+
+form {
+	/* ÄNDRAR SÖKFÄLTETS STORLEKEN PÅ KONTAKTINFORMATIONEN */
+
+	background-color: rgba(240, 248, 255, 0.597);
+	padding: 3em;
+	font-weight: bold; 
+	border: 2px solid black;
+}
+
+.form-layout {
+	display: flex;
+	flex-direction: column;
+	/* padding: 0.2em 3em; */
+
+}
+ form p {
+	display: flex;
+	margin-bottom: 2em;
+	justify-content: center;
+	
+ }
+input, button {
+	font-size: 100%;
+	height: 1.5em;
+}
+input::placeholder {
+	color:gray;
+	
+}
+input[type="text"] {
+	min-width: 190px;
+}
+input:invalid {
+	
+	border-right: 0.5em solid rgb(255, 10, 10);
+}
+input:valid {
+	border-right: 0.5em solid rgb(29, 176, 29);
+}
+
+.error-message {
+	visibility: hidden;
+	margin: 0;
+	font-size: 90%;
+	color: rgb(166, 20, 20);
+}
+input:invalid + .error-message {
+	/* visibility: visible; */
+	/* display: block; */
+}
+
+label {
+	font-weight: bold;
+}
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+	font-weight: normal; 
+}
+
+button:hover,
+input[type="checkbox"]:hover,
+input[type="checkbox"] + label:hover,
+input[type="radio"]:hover,
+input[type="radio"] + label:hover {
+	cursor: pointer;
+}
+
+/* 
+x y    <- släkting, ancestor/descendant
+x > y  <- barn, parent/child
+x + y  <- syskon, sibling (direkt efter)
+x ~ y  <- syskon (flera steg
+*/
+
+
+/* Pure CSS menu */
+.actual-menu {
+	visibility: hidden;
+}
+#toggle-menu:checked + .actual-menu {
+	visibility: visible;
+}
+
+
+/* SISTA SEKTIONEN  */
+
+.food-order{
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+
+}
+.food-text{
+	font-weight: normal;
+}
+
+.requests{
+border: 5px solid lime;
+}
+
+input.radio-btn-input{
+	
+	width: 20px;
+	height: 20px;
+}
+input, radio {
+	font-size: 100%;
+	height: 1.5em;
+}

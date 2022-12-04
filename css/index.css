@@ -176,6 +176,7 @@ article .post-it{
 	flex-direction: column;
 	flex-wrap:wrap;
 	padding:3em;
+
 }
 .date span {
 	line-height: 2em;
@@ -194,6 +195,7 @@ article .post-it{
 	border: 2px solid rgba(0, 0, 0, 0.344);
 	border-radius: 10em;
 	margin:1em;
+	
 
 }
 .text-friday{
@@ -203,6 +205,7 @@ article .post-it{
 	background-color: #eee;
 	padding: 0 2em;
 	margin: 0 2em 0 0 ;
+	border: 20px solid lime ; 
 }
 
 /* test-card2 */
@@ -213,7 +216,7 @@ article .post-it{
 	line-height: 22px;
 	background-color: #eee;
 	padding: 0 2em;
-	margin: 0 2em 0 0 ;
+	/* margin: 0 2em 0 0 ; */
 }
 
 /* test-card 3 */
@@ -223,7 +226,7 @@ article .post-it{
 	line-height: 22px;
 	background-color: #eee;
 	padding: 0 2em;
-	margin: 0 2em 0 0 ;
+	/* margin: 0 2em 0 0 ; */
 }
 
 /* Köp Dags/Helg biljetter */

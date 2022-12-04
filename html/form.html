@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter&family=Lexend&family=Marhey:wght@500&family=Oleo+Script&family=Paytone+One&family=Ubuntu:ital@1&family=Urbanist&display=swap" rel="stylesheet">
+		<link href="../css/index.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="../css/form.css">
+</head>
+<body>
+	<header>
+		<section class="header-menu">
+			<article class="logo-section">
+				<img src="../assets/images/BW-webb.png" alt="företagets logga" class="desktop-pic"/>
+				<img src="../assets/images/BW.png" alt="företagets logga" class="mobile-pic"/>
+				<nav class="nav-section">
+					<ul>
+						<li class="nav-section__text"><h4>Seminarium</h4></li>
+						<li class="nav-section__text"><h4>Boka</h4></li>
+						<li class="nav-section__text"><h4>Kontakt</h4></li>
+						<li class="nav-section__text"><h4>Hitta hit</h4></li>
+						<li class="nav-section__icon">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="black"
+								class="bi bi-person-fill"
+								alt="login-icon"
+								viewBox="0 0 16 16"
+							>
+								<path
+									d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
+								/>
+							</svg>
+						</li>
+					</ul>
+				</nav>
+			</article>
+		 </section>
+		
+		<section class="header-mobile">
+		
+			<div class="second-menu">
+			
+				<div class="menu-icon">
+					<svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-list" viewBox="0 0 16 16" width="40px" height="40px"> 
+						<path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/> 
+					</svg>
+				</div> 
+				
+			
+			<div class="icon">
+				<svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-search" alt="search-icon" viewBox="0 0 16 16" width="35px" height="25px">
+					<path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+				  </svg>
+				  <p class="search">sök</p>
+			</div>
+		</div>
+		</section>
+	</section">
+	
+</header>
+<main>
+	
+	<section class="choose-day">
+		<div class="input-text">
+			<h1>Välj dag</h1>
+		<h3>En dag konstar 550:- /per person</h3>
+			<label for="quantity">Antal personer </label>
+			<input id="quantity" type="number" required min="1" />
+		</div>
+		<div class="form-check">
+				<input class="form-check-input" type="checkbox" value=""   id="flexCheckDefault">
+				<label class="form-check-label" for="flexCheckDefault">
+					<span class="color-background">
+						9  /12 Fredag 10:00 - 16:00
+					 </span>
+				</label>
+		  </div>
+		  <div class="form-check">
+				<input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+				<label class="form-check-label" for="flexCheckChecked">
+				 <span class="color-background">
+				10/12 Lördag 10:00 - 16:00
+				 </span>
+				</label>
+		  </div>
+		  <div class="form-check">
+				<input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+				<label class="form-check-label" for="flexCheckChecked">
+				<span class="color-background">
+				11/12 Söndag 10:00 - 16:00
+				</span>
+				</label>
+			</div> 
+			<hr/>
+				<div class="form-check">
+					<input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+					<label class="form-check-label" for="flexCheckChecked">	
+					<span class="color-background">
+						<p>Boka för hela helgen  1250:-</p>
+					</span>
+					</label>
+				</div> 
+
+	</section>
+
+	<section class="contact-information">
+
+		<div class="menu">
+			<label for="toggle-menu"> Öppna meny </label>
+			<input id="toggle-menu" type="checkbox" checked />
+			<div class="actual-menu"> Jag är synlig ibland </div>
+		</div>
+	
+		<form>
+			<h1> Kontakt information</h1>
+			<div class="form-layout">
+				<label for="input-name"> Förnamn* </label>
+				<input id="input-name" type="text" value="" placeholder="name" required />
+				<p class="error-message"> Var vänlig skriv ditt namn. </p>
+			</div>
+			
+			<div class="form-layout">
+				<label for="input-name"> Efternamn* </label>
+				<input id="input-name" type="text" value="" placeholder="efternamn" required />
+				<p class="error-message"> Var vänlig skriv ditt efternamn. </p>
+			</div>
+			<div class="form-layout">
+				<label for="input-email"> E-postadress </label>
+				<input id="input-email" type="text" value="" placeholder="johndoe@domain.com" required />
+				<p class="error-message"> Var vänlig skriv ditt efternamn. </p>
+			</div>
+	
+			<div class="form-layout">
+				<label for="input-phone"> Telefonnummer </label>
+				<input id="input-phone" type="text" value="" placeholder="070-123 456 78" required minlength="8" maxlength="16" />
+				<p class="error-message"> Var vänlig skriv ditt telefonnummer med 10 siffror. </p>
+			</div>
+	
+			<div class="form-layout">
+				<label for="input-adres"> Adress* </label>
+				<input id="input-adres" type="text" value="" placeholder="Drottning gatan 23" required />
+				<p class="error-message"> Var vänlig skriv din adress. </p>
+			</div>
+		
+			<div class="form-layout">
+				<label for="input-adres"> Post nr </label>
+				<input id="input-adres" type="text" value="" placeholder="Drottning gatan 23" required />
+				<p class="error-message"> Var vänlig skriv din adress. </p>
+			</div>
+			<div class="form-layout">
+				<label for="input-adres"> Kommun* </label>
+				<input id="input-adres" type="text" value="" placeholder="Drottning gatan 23" required />
+				<p class="error-message"> Var vänlig skriv din adress. </p>
+			</div>
+		</form>
+	</section>
+
+	<section class="food-order">
+		<form> 
+			<h1> Vill ni beställa mat</h1>
+			<p class="food-text">Under eventets dagar kommer ni ha lunch mellan 12:00 - 13:00 </p>
+			
+			<div class="radio-btn">
+				<input type="radio" name="radio-news" id="radio1" required />
+				<label for="radio"> Fisk</label>
+			</div>
+			<div class="radio-btn">
+				<input type="radio" name="radio-news" id="radio2" />
+				<label for="radio2"> Kött</label>
+			</div>
+			<div class="radio-btn">
+				<input type="radio" name="radio-news" id="radio3" />
+				<label for="radio3"> Vegetarianskt </label>
+			</div>
+			<hr/>
+				<div class="form-check">
+					<input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+					<label class="form-check-label" for="flexCheckChecked">	
+					<span class="color-background">
+						<p>Jag/vi vill inte beställa mat</p>
+					</span>
+					</label>
+				</div> 
+			
+			<div class="requests">
+				<label for="requests"> Övriga kommentarer (allergier) </label>
+				<input id="requests" type="text" value="" placeholder="..   .    . "  />
+			
+			</div>
+			
+
+		</form>
+
+
+	</section>
+
+
+</main>
+width: 1000vh;
+
+
+</body>
+</html>
+
