@@ -63,7 +63,9 @@
 	
 </header>
 <main>
-	
+	<div class="container">
+
+		
 	<section class="choose-day">
 		<div class="input-text">
 			<h1>Välj dag</h1>
@@ -96,11 +98,14 @@
 				</label>
 			</div> 
 			<hr/>
+			<hr/>
+			
 				<div class="form-check">
+
 					<input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
 					<label class="form-check-label" for="flexCheckChecked">	
 					<span class="color-background">
-						<p>Boka för hela helgen  1250:-</p>
+						Boka för hela helgen  1250:-
 					</span>
 					</label>
 				</div> 
@@ -113,24 +118,24 @@
 			<div class="form-layout">
 				<label for="input-name"> Förnamn* </label>
 				<input id="input-name" type="text" value="" placeholder="name" required />
-				<p class="error-message"> Var vänlig skriv ditt namn. </p>
+				<p class="error-message"> Vänligen skriv ditt namn </p>
 			</div>
 			
 			<div class="form-layout">
 				<label for="input-name"> Efternamn* </label>
 				<input id="input-name" type="text" value="" placeholder="efternamn" required />
-				<p class="error-message"> Var vänlig skriv ditt efternamn. </p>
+				<p class="error-message"> Vänligen skriv ditt efternamn </p>
 			</div>
 			<div class="form-layout">
 				<label for="input-email"> E-postadress </label>
-				<input id="input-email" type="text" value="" placeholder="johndoe@domain.com" required />
-				<p class="error-message"> Var vänlig skriv ditt efternamn. </p>
+				<input id="input-email" type="text" value="" placeholder="janedoe@domain.com" required />
+				<p class="error-message"> Vänligen skriv din e-post igen</p>
 			</div>
 	
 			<div class="form-layout">
 				<label for="input-phone"> Telefonnummer </label>
 				<input id="input-phone" type="text" value="" placeholder="070-123 456 78" required minlength="8" maxlength="16" />
-				<p class="error-message"> Var vänlig skriv ditt telefonnummer med 10 siffror. </p>
+				<p class="error-message"> Var vänlig och skriv ditt telefonnummer med 10 siffror. </p>
 			</div>
 	
 			<div class="form-layout">
@@ -141,13 +146,13 @@
 		
 			<div class="form-layout">
 				<label for="input-adres"> Post nr </label>
-				<input id="input-adres" type="text" value="" placeholder="Drottning gatan 23" required />
-				<p class="error-message"> Var vänlig skriv din adress. </p>
+				<input id="input-adres" type="text" value="" placeholder="Ex 234 56" required />
+				<p class="error-message"> Ange post nummer </p>
 			</div>
 			<div class="form-layout">
 				<label for="input-adres"> Kommun* </label>
-				<input id="input-adres" type="text" value="" placeholder="Drottning gatan 23" required />
-				<p class="error-message"> Var vänlig skriv din adress. </p>
+				<input id="input-adres" type="text" value="" placeholder="karlstad" required />
+				<p class="error-message"> Ange kommun </p>
 			</div>
 		</form>
 	</section>
@@ -170,30 +175,62 @@
 				<label for="radio3"> Vegetarianskt </label>
 			</div>
 			<hr/>
+
 				<div class="form-check">
-					<input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-					<label class="form-check-label" for="flexCheckChecked">	
-					<span class="color-background">
-						<p>Jag/vi vill inte beställa mat</p>
-					</span>
+					<input class="form-check-input" type="checkbox" value=""   id="flexCheckDefault">
+					<label class="form-check-label" for="flexCheckDefault">
+						<span class="no-food-service">
+							Jag/vi vill inte beställa mat
+						 </span>
 					</label>
-				</div> 
-			
-			<div class="requests">
-				<label for="requests"> Övriga kommentarer (allergier) </label>
-				<input id="requests" type="text" value="" placeholder="..   .    . "  />
-			
+					
+			<div class="requests">	<p>Övriga kommentarer</p>
+				<label class="request" for="input-text"></label>
+			<textarea name="" id="input-text" cols="30" rows="10" placeholder="Övriga" required> </textarea>
 			</div>
-			
+
+			<button type="button" class="btn btn-grad">Gå till betalning</button>	
+
+			  </div>
 
 		</form>
 
 
 	</section>
 
+	</div>
 
 </main>
-width: 1000vh;
+
+<footer class="footer-container">
+				
+	<div class="footer-menu">
+		<article class="footer-menu__field">
+		<h4><strong>Öppettider</strong></h4>
+				<p>Mån - fre: 09.00 - 18.00</p>
+				<p>Lör: 12:00 - 15:00</p>
+				<p>Söndag:Stängt!<p>					
+		 </article>
+	 
+		 <article class="footer-menu__field">
+			   <hr class="footer-line">
+			<div class="icons">
+			   <img src="../assets/images/media-icon.png" alt="företags logga" class="img-resize">
+			</div>
+		 </article>
+	 
+		 <article class="footer-menu__field">
+			<h4> <strong>Kontakta Oss</strong></h4>
+			<p>John.doe@domain.com</p>
+			<p>010 - 776 55 34</p>
+			<p>Kungsholmen 17 </p>
+		 </article>
+	</div>
+
+
+
+
+</footer>
 
 
 </body>

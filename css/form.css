@@ -1,6 +1,14 @@
 /* MAIN */
 
+main{display:flex;
+	flex-wrap: wrap;
+}
 
+.main-container{
+	display:flex;
+	flex-direction:row;
+	flex-wrap: wrap;
+}
 /* 1 av 4 sectioner VÄLJ DAG */
 .choose-day{
 	display:flex;
@@ -31,8 +39,11 @@
 		height: 20px;
 
 	}
+.form-check:last-child{
+	margin-bottom:2em;
+}
+
 	p{
-		display: inline;
 		font-size: 20px;
 	}
 
@@ -44,10 +55,13 @@
 	margin-bottom:1.5em;
 }
 
+.contact-information{
+	margin: 3em 0;
+}
 
 form {
 	/* ÄNDRAR SÖKFÄLTETS STORLEKEN PÅ KONTAKTINFORMATIONEN */
-
+	margin: auto;
 	background-color: rgba(240, 248, 255, 0.597);
 	padding: 3em;
 	font-weight: bold; 
@@ -96,9 +110,10 @@ input:invalid + .error-message {
 	/* display: block; */
 }
 
-label {
-	font-weight: bold;
-}
+/* label {  DENNA GÖR ALLT 
+border: 4px solid hotpink;
+	
+} */
 input[type="checkbox"] + label,
 input[type="radio"] + label {
 	font-weight: normal; 
@@ -138,19 +153,49 @@ x ~ y  <- syskon (flera steg
 
 }
 .food-text{
+	display: flex;
+	flex-direction: column;
 	font-weight: normal;
-}
-
-.requests{
-border: 5px solid lime;
-}
-
-input.radio-btn-input{
 	
-	width: 20px;
-	height: 20px;
 }
-input, radio {
-	font-size: 100%;
-	height: 1.5em;
+
+input[type=radio] {
+    border: 0px;
+    width: 1em;
+    height: 1em;
+	
+}
+.radio-btn{
+	font-size: 1.3em;
+	margin: 0.5em 0;
+}
+
+.radio-btn:hover{
+	background-color: white;
+	cursor: pointer;
+}
+.no-food-service{
+	font-size: 20px;
+	margin-top:5em;
+}
+.no-food-service:hover{
+	background-color: white;
+	cursor: pointer;
+	font-size: 20px;
+	margin-top:5em;
+	
+}
+
+hr{
+	margin-bottom: 1.5em;
+}
+
+.color-background{
+	font-size: 20px;
+	
+}
+.btn-grad{padding: 1.5em;
+
+	display: column;
+align-content: center;
 }
