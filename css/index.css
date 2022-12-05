@@ -214,6 +214,8 @@ article .post-it{
 	border: 2px solid rgba(0, 0, 0, 0.344);
 	border-radius: 10em;
 	margin:1em;
+	height: 15em;
+    width: 20em;
 	
 
 }
