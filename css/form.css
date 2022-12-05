@@ -40,7 +40,7 @@ main{
 
 /* 1 av 4 sectioner VÄLJ DAG */
 .choose-day{
-	display:flex;
+	
 	flex-direction: column;
 	background-color: rgba(240, 248, 255, 0.597);
 	border: 2px solid black;
@@ -72,7 +72,9 @@ main{
 .form-check:last-child{
 	margin-bottom:2em;
 }
-
+.choose-day > hr{
+	margin: 0 3em 3em;
+}
 	p{
 		font-size: 20px;
 	}
@@ -117,7 +119,6 @@ form {
  }
 input, button {
 	font-size: 100%;
-	height: 1.5em;
 }
 input::placeholder {
 	color:gray;
@@ -234,14 +235,13 @@ hr{
 }
 
 .color-background{
-	font-size: 23px;
+	font-size: 24px;
 	
 }
 
 .btn-grad{
-padding: 1.5em;
-/* display: column; */
-/* align-content: center; */
+	display: flex;
+padding: 2.5em;
 justify-content: center;
 }
 

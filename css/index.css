@@ -199,14 +199,16 @@ article .post-it{
 .date span {
 	line-height: 2em;
 	margin: 1em;
-	justify-content: center;
+	justify-content: space-around;
+	
 }
 
 .test-card{
 	display:flex;
-	flex-wrap: wrap;
-	padding: 2em;
+	/* flex-wrap: wrap; */
+	padding: 0  2em;
 	display:block;
+	
 }
 .text-pic{
 	max-width: 30%;
@@ -214,18 +216,17 @@ article .post-it{
 	border: 2px solid rgba(0, 0, 0, 0.344);
 	border-radius: 10em;
 	margin:1em;
-	height: 15em;
+	height: 12em;
     width: 20em;
 	
-
 }
 
 
 /* test-card2 */
 
 .text-day{
-	font-family: 'Ubuntu', sans-serif;
-	font-size: 18px;
+	font-family: 'Urbanist', sans-serif; 
+	font-size: 20px;
 	line-height: 22px;
 	background-color: #eee;
 	padding: 1em 2em;
@@ -336,7 +337,6 @@ article .post-it{
 		img.text-pic{
 			height: 0;
 			width:1px;
-		/* display: none; */
 			visibility: hidden;
 		
 		}
