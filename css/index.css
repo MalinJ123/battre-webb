@@ -14,6 +14,15 @@ body {
 	background-size: cover;
 }
 
+/* A Href navbar */
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+    color:rgb(6, 115, 240);
+}
+
 /* HEADER STYLING */
 
 .header-menu {
@@ -44,6 +53,12 @@ body {
 	flex-wrap: wrap;
 }
 
+.nav-section:hover{
+	cursor: pointer;
+	color:#9733EE
+	
+}
+
 .nav-section ul {
 	display: flex;
 	list-style-type: none;
@@ -54,8 +69,8 @@ li.nav-section__text {
 }
 li.nav-section__icon svg {
     width: 2rem;
-    height: 2rem;
-	padding: 1em;
+    height: 3.5rem;
+	
 }
 
 .second-menu{
@@ -86,6 +101,9 @@ li.nav-section__icon svg {
 	line-height: 0%;
 	
 }
+
+
+
 @media (max-width: 900px) {
 		
 	li.nav-section__text {
@@ -188,6 +206,7 @@ article .post-it{
 	display:flex;
 	flex-wrap: wrap;
 	padding: 2em;
+	display:block;
 }
 .text-pic{
 	max-width: 30%;
@@ -198,36 +217,20 @@ article .post-it{
 	
 
 }
-.text-friday{
-	font-family: 'Ubuntu', sans-serif;
-	font-size: 18px;
-	line-height: 22px;
-	background-color: #eee;
-	padding: 0 2em;
-	margin: 0 2em 0 0 ;
-	border: 20px solid lime ; 
-}
+
 
 /* test-card2 */
 
-.text-saturday{
+.text-day{
 	font-family: 'Ubuntu', sans-serif;
 	font-size: 18px;
 	line-height: 22px;
 	background-color: #eee;
-	padding: 0 2em;
+	padding: 1em 2em;
 	/* margin: 0 2em 0 0 ; */
 }
 
-/* test-card 3 */
-.text-sunday{
-	font-family: 'Ubuntu', sans-serif;
-	font-size: 18px;
-	line-height: 22px;
-	background-color: #eee;
-	padding: 0 2em;
-	/* margin: 0 2em 0 0 ; */
-}
+
 
 /* Köp Dags/Helg biljetter */
 
@@ -323,7 +326,19 @@ article .post-it{
 		display:column;
 		margin-left: 2em;
 	}
+
+	
 }
+@media (max-width:1270px) {
+		
+		img.text-pic{
+			height: 0;
+			width:1px;
+		/* display: none; */
+			visibility: hidden;
+		
+		}
+	}
 
 /* Footer */
 

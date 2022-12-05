@@ -1,22 +1,54 @@
 /* MAIN */
 
-main{display:flex;
-	flex-wrap: wrap;
+*{
+	box-sizing: border-box;
+
 }
 
+body{
+	min-height: 100vh;
+	display:flex;
+	flex-direction: column;
+	
+}
+
+main{
+	flex-grow: 1;
+	/* display: flex;
+	flex-wrap:wrap; */
+
+} 
 .main-container{
+		/* display: grid;
+	grid-template-columns: 1fr 1fr 1fr; */
+	margin: 3em ;
 	display:flex;
 	flex-direction:row;
 	flex-wrap: wrap;
 }
+
+.main-container > * {
+	flex-grow:1; 
+	flex-basis: 0;
+	min-width: 20em;
+}
+ 
+/* .main-container * {
+	border: 4px solid black; 
+} */
+.container{
+	display:flex;
+	flex-direction:row;
+	flex-wrap: wrap;
+} 
+
 /* 1 av 4 sectioner VÄLJ DAG */
 .choose-day{
 	display:flex;
 	flex-direction: column;
 	background-color: rgba(240, 248, 255, 0.597);
 	border: 2px solid black;
-	margin-top: 8em;
-	max-width:auto;
+	
 
 	
 }
@@ -55,13 +87,16 @@ main{display:flex;
 	margin-bottom:1.5em;
 }
 
-.contact-information{
-	margin: 3em 0;
+.contact-information > form{
+
+	height: 100%;
+ 
 }
+
 
 form {
 	/* ÄNDRAR SÖKFÄLTETS STORLEKEN PÅ KONTAKTINFORMATIONEN */
-	margin: auto;
+	/* margin: auto;  */
 	background-color: rgba(240, 248, 255, 0.597);
 	padding: 3em;
 	font-weight: bold; 
