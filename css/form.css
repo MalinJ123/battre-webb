@@ -19,12 +19,11 @@ main{
 
 } 
 .main-container{
-		/* display: grid;
-	grid-template-columns: 1fr 1fr 1fr; */
-	margin: 3em ;
+	margin: 6em;
 	display:flex;
 	flex-direction:row;
 	flex-wrap: wrap;
+
 }
 
 .main-container > * {
@@ -33,9 +32,6 @@ main{
 	min-width: 20em;
 }
  
-/* .main-container * {
-	border: 4px solid black; 
-} */
 .container{
 	display:flex;
 	flex-direction:row;
@@ -48,7 +44,8 @@ main{
 	flex-direction: column;
 	background-color: rgba(240, 248, 255, 0.597);
 	border: 2px solid black;
-	
+	padding-top: 4em;
+	font-size: 1.4em;
 
 	
 }
@@ -62,8 +59,9 @@ main{
 		text-align: center;
 	}
 	.form-check{
-		line-height: 36px;
 		text-align: center;
+		/* font-size: 20px; */
+		padding: 1em;
 	}
 
 	input.form-check-input{
@@ -85,12 +83,14 @@ main{
 #quantity{
 	width:2em;
 	margin-bottom:1.5em;
+	
 }
 
 .contact-information > form{
-
 	height: 100%;
- 
+	font-size: 22px;
+
+	
 }
 
 
@@ -126,6 +126,8 @@ input::placeholder {
 input[type="text"] {
 	min-width: 190px;
 }
+
+
 input:invalid {
 	
 	border-right: 0.5em solid rgb(255, 10, 10);
@@ -137,6 +139,7 @@ input:valid {
 .error-message {
 	visibility: hidden;
 	margin: 0;
+	font-weight: normal;
 	font-size: 90%;
 	color: rgb(166, 20, 20);
 }
@@ -190,15 +193,18 @@ x ~ y  <- syskon (flera steg
 .food-text{
 	display: flex;
 	flex-direction: column;
-	font-weight: normal;
+	font-size: 22px;
 	
+}
+h1{
+	font-size: 29px;
 }
 
 input[type=radio] {
     border: 0px;
     width: 1em;
     height: 1em;
-	
+	font-size: 23px;
 }
 .radio-btn{
 	font-size: 1.3em;
@@ -209,28 +215,47 @@ input[type=radio] {
 	background-color: white;
 	cursor: pointer;
 }
-.no-food-service{
-	font-size: 20px;
-	margin-top:5em;
-}
-.no-food-service:hover{
-	background-color: white;
-	cursor: pointer;
-	font-size: 20px;
-	margin-top:5em;
-	
-}
+
 
 hr{
 	margin-bottom: 1.5em;
 }
 
+.requests{
+	display:flex;
+	flex-direction:column;
+	align-items: center;
+
+}
+
+.requests p{
+	font-size: 23px;
+	margin-bottom: 0.5em;
+}
+
 .color-background{
-	font-size: 20px;
+	font-size: 23px;
 	
 }
-.btn-grad{padding: 1.5em;
 
-	display: column;
-align-content: center;
+.btn-grad{
+padding: 1.5em;
+/* display: column; */
+/* align-content: center; */
+justify-content: center;
+}
+
+@media(max-width:850px ) {
+	
+	.main-container{
+		margin-top: 6em;
+		margin-left:1em;
+		margin-right: 1em;
+		display:flex;
+		flex-direction:row;
+		flex-wrap: wrap;
+	
+	}
+	
+	
 }
