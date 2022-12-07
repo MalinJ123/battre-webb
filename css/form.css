@@ -5,6 +5,10 @@
 
 }
 
+.main-form{
+	max-width:2000px ;
+}
+
 body{
 	min-height: 100vh;
 	display:flex;
