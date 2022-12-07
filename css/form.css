@@ -14,8 +14,6 @@ body{
 
 main{
 	flex-grow: 1;
-	/* display: flex;
-	flex-wrap:wrap; */
 
 } 
 .main-container{
@@ -38,7 +36,7 @@ main{
 	flex-wrap: wrap;
 } 
 
-/* 1 av 4 sectioner VÄLJ DAG */
+/* VÄLJ DAG */
 .choose-day{
 	
 	flex-direction: column;
@@ -47,7 +45,6 @@ main{
 	padding-top: 4em;
 	font-size: 1.4em;
 
-	
 }
 	.color-background:hover{
 		background-color: white;
@@ -79,8 +76,7 @@ main{
 		font-size: 20px;
 	}
 
-	/* 2 av 3 sectioner */
-/* DAVIDS CSS GITHUB  */
+	/* Kontakt information */
 
 #quantity{
 	width:2em;
@@ -92,15 +88,13 @@ main{
 	height: 100%;
 	font-size: 22px;
 
-	
 }
 
 
 form {
 	/* ÄNDRAR SÖKFÄLTETS STORLEKEN PÅ KONTAKTINFORMATIONEN */
-	/* margin: auto;  */
 	background-color: rgba(240, 248, 255, 0.597);
-	padding: 3em;
+	padding: 4em;
 	font-weight: bold; 
 	border: 2px solid black;
 }
@@ -108,7 +102,6 @@ form {
 .form-layout {
 	display: flex;
 	flex-direction: column;
-	/* padding: 0.2em 3em; */
 
 }
  form p {
@@ -121,13 +114,12 @@ input, button {
 	font-size: 100%;
 }
 input::placeholder {
-	color:gray;
+	color:rgba(128, 128, 128, 0.756);
 	
 }
 input[type="text"] {
 	min-width: 190px;
 }
-
 
 input:invalid {
 	
@@ -146,13 +138,9 @@ input:valid {
 }
 input:invalid + .error-message {
 	visibility: visible; 
-	/* display: block; */
+
 }
 
-/* label {  DENNA GÖR ALLT 
-border: 4px solid hotpink;
-	
-} */
 input[type="checkbox"] + label,
 input[type="radio"] + label {
 	font-weight: normal; 
@@ -166,24 +154,8 @@ input[type="radio"] + label:hover {
 	cursor: pointer;
 }
 
-/* 
-x y    <- släkting, ancestor/descendant
-x > y  <- barn, parent/child
-x + y  <- syskon, sibling (direkt efter)
-x ~ y  <- syskon (flera steg
-*/
 
-
-/* Pure CSS menu */
-.actual-menu {
-	visibility: hidden;
-}
-#toggle-menu:checked + .actual-menu {
-	visibility: visible;
-}
-
-
-/* SISTA SEKTIONEN  */
+/* Beställa mat */
 
 .food-order{
 	display: flex;
