@@ -1,8 +1,5 @@
 /* font-family: 'Inter', sans-serif;
 font-family: 'Lexend', sans-serif;
-font-family: 'Marhey', cursive;
-font-family: 'Oleo Script', cursive;
-font-family: 'Paytone One', sans-serif;
 font-family: 'Ubuntu', sans-serif;
 font-family: 'Urbanist', sans-serif; */
 
@@ -367,6 +364,8 @@ article .post-it{
 	box-shadow: 0 0 30px #eee;
 	border-radius: 10px;
 	display: block;
+	font-family: 'Urbanist', sans-serif; 
+	font-weight: bold;
 	
   }
 
@@ -374,6 +373,7 @@ article .post-it{
 	background-position: right center;
 	color: #fff;
 	text-decoration: none;
+
   }
  
   .img-resize{ 

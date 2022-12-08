@@ -45,7 +45,7 @@ main{
 	
 	flex-direction: column;
 	background-color: rgba(240, 248, 255, 0.597);
-	border: 2px solid black;
+	border-right: 4px solid rgba(0, 0, 0, 0.192);
 	padding-top: 4em;
 	font-size: 1.4em;
 
@@ -100,7 +100,6 @@ form {
 	background-color: rgba(240, 248, 255, 0.597);
 	padding: 4em;
 	font-weight: bold; 
-	border: 2px solid black;
 }
 
 .form-layout {
@@ -165,6 +164,7 @@ input[type="radio"] + label:hover {
 	display: flex;
 	flex-direction: column;
 	align-content: center;
+	border-left:solid rgba(0, 0, 0, 0.192);
 
 }
 .food-text{
@@ -216,7 +216,7 @@ hr{
 }
 
 .btn-grad{
-	display: flex;
+display: flex;
 padding: 2.5em;
 justify-content: center;
 }
